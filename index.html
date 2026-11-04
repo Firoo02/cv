@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Sharaa — Senior Video Editor & Motion Designer | محمد شراع</title>
+<meta name="description" content="Mohamed Sharaa — Senior Video Editor & Motion Designer. Video ads, motion graphics and social content for Saudi and international brands. Open to relocate to Saudi Arabia.">
+<meta property="og:title" content="Mohamed Sharaa — Senior Video Editor & Motion Designer">
+<meta property="og:description" content="8+ years · 211+ projects · 30+ countries · 4.9/5 rating. Video ads, motion graphics & social content.">
+<meta property="og:image" content="assets/photo.jpg">
+<link rel="icon" href="assets/photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f4;--bg2:#f2eee6;--card:#ffffff;--line:#e8e2d6;--ink:#1b1d22;--muted:#5d6470;
+  --accent:#c2841f;--accent2:#e0562b;--accent-ink:#ffffff;--shadow:0 1px 2px #1b1d220a,0 8px 24px #1b1d2210;
+  --radius:16px;--max:1120px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Inter","IBM Plex Sans Arabic",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html[lang=ar] body{font-family:"IBM Plex Sans Arabic","Inter",system-ui,sans-serif}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+[data-lang]{display:none}
+html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-weight:800;letter-spacing:.5px;text-decoration:none;font-size:18px}
+.logo b{color:var(--accent)}
+.links{display:flex;gap:18px;margin-inline-start:auto;font-size:14px}
+.links a{text-decoration:none;color:var(--muted)} .links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 18px;border-radius:999px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:.2s}
+.btn:hover{border-color:var(--accent);transform:translateY(-1px)}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.stat,.svc,.work,.box{box-shadow:var(--shadow)}
+.btn.sm{padding:6px 14px;font-size:13px}
+@media (max-width:820px){.links{display:none}}
+
+/* hero */
+.hero{padding:80px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-40% -10% auto auto;width:620px;height:620px;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 28%,transparent),transparent 65%);filter:blur(20px);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);padding:5px 12px;border-radius:999px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 0 4px #3ecf8e33}
+h1{font-size:clamp(36px,6vw,64px);line-height:1.08;margin:18px 0 10px;letter-spacing:-1px}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.photo{position:relative;justify-self:center}
+.photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:28px;background:linear-gradient(135deg,var(--accent),var(--accent2));opacity:.9}
+html[dir=rtl] .photo::before{inset:18px 18px -18px -18px}
+.photo img{position:relative;width:min(320px,74vw);aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:28px;border:6px solid #fff;box-shadow:var(--shadow);background:#fff}
+.photo .tag{position:absolute;bottom:-14px;inset-inline-start:-14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.4;box-shadow:var(--shadow)}
+.photo .tag b{display:block;font-size:20px;color:var(--accent)}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.photo{order:-1}.hero{padding-top:40px}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.stat b{font-size:32px;display:block;line-height:1.1;font-family:Inter,sans-serif}
+.stat span{color:var(--muted);font-size:14px}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:70px 0}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+h2{font-size:clamp(26px,3.6vw,38px);margin:0;letter-spacing:-.5px}
+h2 small{display:block;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.lead{color:var(--muted);max-width:760px;font-size:17px}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:.2s}
+.svc:hover{border-color:color-mix(in srgb,var(--accent) 50%,transparent)}
+.svc .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);margin-bottom:12px}
+.svc h3{margin:0 0 6px;font-size:18px}
+.svc p{margin:0;color:var(--muted);font-size:14.5px}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tools span{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-family:Inter,sans-serif}
+@media (max-width:900px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.services{grid-template-columns:1fr}}
+
+/* work */
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:7px 16px;font:inherit;font-size:14px;cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.work{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:.25s;text-align:start;padding:0;font:inherit;color:inherit}
+.work:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 50%,transparent)}
+.thumb{aspect-ratio:16/10;position:relative;overflow:hidden;display:grid;place-items:center}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb .ph{position:absolute;inset:0;display:grid;place-items:center;font-size:44px;font-weight:800;color:#ffffffcc;letter-spacing:-1px;font-family:Inter,sans-serif}
+.thumb .play{position:absolute;width:54px;height:54px;border-radius:50%;background:#000a;display:grid;place-items:center;border:1px solid #fff5}
+.work .meta{padding:14px 16px}
+.work .meta b{display:block;font-size:16px}
+.work .meta span{color:var(--muted);font-size:13px}
+@media (max-width:900px){.works{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.works{grid-template-columns:1fr}}
+dialog{border:1px solid var(--line);background:var(--bg2);color:var(--ink);border-radius:var(--radius);padding:0;width:min(960px,94vw)}
+dialog::backdrop{background:#000c}
+dialog .media{aspect-ratio:16/9;background:#000}
+dialog.vertical{width:min(400px,92vw)}
+dialog.vertical .media{aspect-ratio:9/16;max-height:80vh;margin:auto}
+dialog .media iframe,dialog .media img,dialog .media video{width:100%;height:100%;border:0;object-fit:contain}
+dialog .body{padding:16px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+
+/* experience */
+.grid2{display:grid;grid-template-columns:1.5fr 1fr;gap:28px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+.timeline{border-inline-start:2px solid var(--line);padding-inline-start:24px;display:grid;gap:26px}
+.job{position:relative}
+.job::before{content:"";position:absolute;inset-inline-start:-31px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.job h3{margin:0;font-size:18px}
+.job .when{color:var(--accent);font-size:13px;font-weight:600;font-family:Inter,sans-serif}
+.job .org{color:var(--muted);font-size:14px}
+.job ul{margin:8px 0 0;padding-inline-start:18px;color:#3a3f48;font-size:15px}
+.job li{margin:3px 0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:14px}
+.box h3{margin:0 0 10px;font-size:16px;color:var(--accent)}
+.box p,.box li{margin:4px 0;font-size:15px}
+.box ul{margin:0;padding-inline-start:18px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14.5px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;font-weight:500}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.why div{border-top:2px solid var(--accent);padding-top:14px}
+.why b{display:block;margin-bottom:4px}
+.why p{margin:0;color:var(--muted);font-size:14.5px}
+@media (max-width:760px){.why{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 18%,var(--card)),var(--card));border:1px solid var(--line);border-radius:24px;padding:44px;text-align:center}
+.contact h2{margin-bottom:10px}
+.contact .cta{justify-content:center;margin-top:22px}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:30px 0 40px}
+
+.reveal{opacity:0;transform:translateY(16px);transition:.6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ============ PRINT = نسخة الـ CV (A4) ============ */
+.print-only{display:none}
+@media print{
+  @page{size:A4;margin:12mm 13mm}
+  :root{--bg:#fff;--card:#fff;--line:#dde1e7;--ink:#14161b;--muted:#5b6474;--accent:#b7791f}
+  body{font-size:10.5pt;line-height:1.5;background:#fff}
+  nav,.cta,.filters,#work,#why,.hero::before,.photo .tag,dialog,footer,.contact,.no-print,.stats{display:none!important}
+  #printContact span{display:inline-block}
+  .print-only{display:block}
+  .wrap{max-width:none;padding:0}
+  section{padding:0;margin:0 0 5mm;break-inside:auto}
+  .hero{padding:0 0 4mm;border-bottom:2px solid var(--accent);margin-bottom:5mm}
+  .hero .wrap{grid-template-columns:auto 1fr;gap:6mm}
+  .photo{order:-1;justify-self:start;align-self:center}
+  .photo::before{display:none}
+  .photo img{width:28mm;height:35mm;border-radius:4mm;border:1px solid var(--line);box-shadow:none}
+  .stat,.svc,.work,.box{box-shadow:none}
+  h1{font-size:24pt;margin:0 0 1mm;letter-spacing:0}
+  h1 span{color:var(--ink);background:none;-webkit-text-fill-color:currentColor}
+  .role{font-size:12pt;margin:0 0 2mm}
+  .eyebrow{display:none}
+  h2{font-size:13pt;border-bottom:1px solid var(--line);padding-bottom:1mm;margin-bottom:3mm}
+  h2 small{display:none}
+  .sec-head{margin-bottom:0}
+  .lead{font-size:10.5pt;max-width:none;color:var(--ink)}
+  .services{grid-template-columns:1fr 1fr;gap:2.5mm}
+  .svc{padding:2.5mm 3mm;break-inside:avoid;border-radius:2mm}
+  .svc .ic{display:none} .svc h3{font-size:11pt;margin:0} .svc p{font-size:9.5pt}
+  .tools span{font-size:8pt;padding:0 2mm}
+  .grid2{display:block}
+  .grid2 aside{display:grid;grid-template-columns:1fr 1fr;gap:0 3mm;align-items:start;margin-top:4mm}
+  .grid2 aside .box:first-child{grid-row:span 3}
+  .timeline{gap:3mm;padding-inline-start:5mm}
+  .sec-head,.job h3,.job .org{break-after:avoid}
+  .job li{break-inside:avoid} .job::before{inset-inline-start:-6.6mm;width:2.5mm;height:2.5mm;box-shadow:none}
+  .job ul{color:var(--ink);font-size:10pt}
+  .box{padding:2.5mm 3mm;margin-bottom:2.5mm;break-inside:avoid;border-radius:2mm}
+  .box p,.box li,.kv{font-size:9.5pt}
+  .why{gap:3mm} .why div{padding-top:1.5mm} .why p{font-size:9.5pt}
+  .reveal{opacity:1!important;transform:none!important}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="no-print">
+  <div class="wrap">
+    <a class="logo" href="#top">M<b>.</b>SHARAA</a>
+    <div class="links">
+      <a href="#about"><span data-lang="ar">نبذة</span><span data-lang="en">About</span></a>
+      <a href="#work"><span data-lang="ar">أعمالي</span><span data-lang="en">Work</span></a>
+      <a href="#experience"><span data-lang="ar">الخبرات</span><span data-lang="en">Experience</span></a>
+      <a href="#contact"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></a>
+    </div>
+    <button class="btn sm" id="langBtn" aria-label="Switch language">EN</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow"><i></i>
+        <span data-lang="ar">متاح للعمل فوراً • جاهز للانتقال إلى السعودية</span>
+        <span data-lang="en">Available immediately • Ready to relocate to KSA</span>
+      </span>
+      <h1>
+        <span data-lang="ar">محمد شراع</span>
+        <span data-lang="en">Mohamed Sharaa</span>
+      </h1>
+      <p class="role">
+        <span data-lang="ar">محرر فيديو أول ومصمم موشن جرافيك ومؤثرات بصرية VFX</span>
+        <span data-lang="en">Senior Video Editor &amp; Motion Designer | VFX Artist</span>
+      </p>
+      <div class="print-only" id="printContact"></div>
+      <div class="cta">
+        <a class="btn primary" href="#work"><span data-lang="ar">شاهد أعمالي</span><span data-lang="en">View my work</span> →</a>
+        <a class="btn js-wa" target="_blank" hidden><span data-lang="ar">واتساب</span><span data-lang="en">WhatsApp</span></a>
+        <button class="btn" onclick="window.print()"><span data-lang="ar">تحميل السيرة الذاتية PDF</span><span data-lang="en">Download CV (PDF)</span></button>
+      </div>
+    </div>
+    <div class="photo reveal">
+      <img src="assets/photo.jpg" alt="Mohamed Sharaa" width="340" height="340">
+      <div class="tag"><b>4.9/5</b><span data-lang="ar">تقييم العملاء</span><span data-lang="en">Client rating</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats reveal" style="margin-top:48px">
+      <div class="stat"><b>8+</b><span data-lang="ar">سنوات خبرة</span><span data-lang="en">Years of experience</span></div>
+      <div class="stat"><b>211+</b><span data-lang="ar">مشروع منفّذ</span><span data-lang="en">Projects delivered</span></div>
+      <div class="stat"><b>30+</b><span data-lang="ar">دولة</span><span data-lang="en">Countries</span></div>
+      <div class="stat"><b>C2</b><span data-lang="ar">مستوى الإنجليزية (EF SET)</span><span data-lang="en">English level (EF SET)</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2><small>About</small><span data-lang="ar">نبذة عني</span><span data-lang="en">Professional Summary</span></h2></div>
+    <p class="lead" data-lang="ar">محرر فيديو أول ومصمم موشن جرافيك بخبرة تتجاوز 8 سنوات في إنتاج الفيديوهات الإعلانية والموشن جرافيك والمؤثرات البصرية ومحتوى منصات التواصل الذي يخدم أهدافاً تسويقية واضحة. نفّذت أكثر من 211 مشروعاً لعملاء في أكثر من 30 دولة بتقييم 4.9 من 5، منها مشاريع للسوق السعودي مثل شركة الصندوق الأسود ومعرض الزعيم وحملات موسمية، وفيديو ترويجي لتطبيق Toters. أتميّز بالمونتاج سريع الإيقاع الذي يرفع معدلات المشاهدة، وأوظّف Python وأدوات الذكاء الاصطناعي لأتمتة سير العمل وتسريع التسليم دون المساس بالجودة. أبحث عن وظيفة بدوام كامل في المملكة العربية السعودية، وجاهز للانتقال فوراً.</p>
+    <p class="lead" data-lang="en">Senior Video Editor and Motion Designer with 8+ years of experience producing video ads, motion graphics, VFX and social media content that serve clear business goals. Delivered 211+ projects for clients in 30+ countries at a 4.9/5 rating — including Saudi market work for Black Box, Al Zaeem Exhibition and seasonal campaigns, and a motion promo for the Toters app. Known for fast-paced, high-retention editing, and for using Python and AI tools to automate workflows and deliver faster without compromising quality. Seeking a full-time role in Saudi Arabia; ready to relocate immediately.</p>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2><small>Expertise</small><span data-lang="ar">المهارات الأساسية</span><span data-lang="en">Core Competencies</span></h2></div>
+    <div class="services">
+      <div class="svc reveal"><div class="ic">▶</div>
+        <h3><span data-lang="ar">المونتاج وإنتاج الفيديو</span><span data-lang="en">Video Editing &amp; Production</span></h3>
+        <p data-lang="ar">مونتاج سريع الإيقاع يرفع معدل المشاهدة، فيديوهات إعلانية، ريلز وتيك توك وسناب، تصحيح ألوان وسرد بصري.</p>
+        <p data-lang="en">High-retention, fast-paced editing, video ads, Reels/TikTok/Snap content, color grading and visual storytelling.</p>
+        <div class="tools"><span>Premiere Pro (Advanced)</span><span>DaVinci Resolve</span></div></div>
+      <div class="svc reveal"><div class="ic">◆</div>
+        <h3><span data-lang="ar">الموشن جرافيك والمؤثرات</span><span data-lang="en">Motion Graphics &amp; VFX</span></h3>
+        <p data-lang="ar">فيديوهات شرح، مقدمات، تحريك شعارات، كينتك تايبوجرافي، ومؤثرات بصرية ثلاثية الأبعاد.</p>
+        <p data-lang="en">Explainer videos, intros, logo animation, kinetic typography and 3D VFX compositing.</p>
+        <div class="tools"><span>After Effects</span><span>Element 3D</span><span>VFX</span></div></div>
+      <div class="svc reveal"><div class="ic">✦</div>
+        <h3><span data-lang="ar">التصميم الجرافيكي</span><span data-lang="en">Graphic Design</span></h3>
+        <p data-lang="ar">تصاميم إعلانية وسوشيال ميديا، هويات بصرية، ومواد للحملات الموسمية والمعارض.</p>
+        <p data-lang="en">Social media and ad creatives, brand identities, and assets for seasonal campaigns and exhibitions.</p>
+        <div class="tools"><span>Photoshop</span><span>Illustrator</span></div></div>
+      <div class="svc reveal"><div class="ic">↗</div>
+        <h3><span data-lang="ar">محتوى التجارة الإلكترونية والسوشيال</span><span data-lang="en">E-commerce &amp; Social Content</span></h3>
+        <p data-lang="ar">محتوى إعلاني للمتاجر والمنتجات مصمم للتحويل، بنتائج تسويقية قابلة للقياس.</p>
+        <p data-lang="en">Product and store ad content built for conversion, with measurable marketing results.</p>
+        <div class="tools"><span>Meta Ads</span><span>TikTok</span><span>Snapchat</span></div></div>
+      <div class="svc reveal"><div class="ic">⌘</div>
+        <h3><span data-lang="ar">الأتمتة والذكاء الاصطناعي</span><span data-lang="en">Automation &amp; AI</span></h3>
+        <p data-lang="ar">بناء أدوات بـ Python لأتمتة التسعير والمتابعة وسير الإنتاج، وتوظيف أدوات الذكاء الاصطناعي لتسريع العمل.</p>
+        <p data-lang="en">Python tools that automate pricing, follow-ups and production workflows, plus AI tools to speed up delivery.</p>
+        <div class="tools"><span>Python</span><span>AI Tools</span><span>Automation</span></div></div>
+      <div class="svc reveal"><div class="ic">◎</div>
+        <h3><span data-lang="ar">إدارة المشاريع والعمل مع العملاء</span><span data-lang="en">Project &amp; Client Management</span></h3>
+        <p data-lang="ar">إدارة المشروع من الفكرة حتى التسليم، الالتزام بالمواعيد، التواصل المباشر مع العملاء، وتحويل المطلوب لمخرجات واضحة.</p>
+        <p data-lang="en">Owning projects from concept to delivery, deadline management, direct client communication and turning briefs into clear output.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2><small>Portfolio</small><span data-lang="ar">مختارات من أعمالي</span><span data-lang="en">Selected Work</span></h2>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="works" id="works"></div>
+  </div>
+</section>
+<dialog id="viewer"><div class="media" id="vMedia"></div><div class="body"><b id="vTitle"></b><button class="btn sm" onclick="viewer.close()"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></button></div></dialog>
+
+<section id="experience">
+  <div class="wrap grid2">
+    <div class="reveal">
+      <div class="sec-head"><h2><small>Experience</small><span data-lang="ar">الخبرات العملية</span><span data-lang="en">Professional Experience</span></h2></div>
+      <div class="timeline">
+        <div class="job">
+          <span class="when"><span data-lang="ar">سبتمبر 2018 – حتى الآن</span><span data-lang="en">Sep 2018 – Present</span></span>
+          <h3><span data-lang="ar">محرر فيديو أول ومصمم موشن جرافيك</span><span data-lang="en">Senior Video Editor &amp; Motion Designer</span></h3>
+          <div class="org"><span data-lang="ar">عمل حر — Upwork و Freelancer.com (عن بُعد)</span><span data-lang="en">Freelance — Upwork &amp; Freelancer.com (Remote)</span></div>
+          <ul data-lang="ar">
+            <li>نفّذت أكثر من 211 مشروعاً لعملاء في أكثر من 30 دولة بتقييم 4.9 من 5، وحصلت على لقب Preferred Freelancer.</li>
+            <li>أنتجت فيديوهات إعلانية وموشن جرافيك ومحتوى سوشيال للسوق السعودي، منها شركة الصندوق الأسود ومعرض الزعيم وحملات موسمية (الشتاء والصيف).</li>
+            <li>متخصص في محتوى التجارة الإلكترونية والإعلانات القصيرة سريعة الإيقاع لرفع المشاهدة والاحتفاظ بالجمهور.</li>
+            <li>أنتجت فيديو موشن جرافيك ترويجي لتطبيق Toters، وإعلانات منتجات ومؤثرات بصرية (VFX) باستخدام After Effects.</li>
+            <li>بنيت أدوات أتمتة بـ Python لتسعير المشاريع ومتابعة العملاء وتسريع الإنتاج اليومي.</li>
+          </ul>
+          <ul data-lang="en">
+            <li>Delivered 211+ projects for clients in 30+ countries with a 4.9/5 rating; earned Preferred Freelancer status.</li>
+            <li>Produced video ads, motion graphics and social content for the Saudi market, including Black Box, Al Zaeem Exhibition and seasonal (winter/summer) campaigns.</li>
+            <li>Specialized in e-commerce and short-form, fast-paced ads built for high view-through and retention.</li>
+            <li>Produced a motion graphics promo for the Toters app, product reveal ads and VFX work in After Effects.</li>
+            <li>Built Python automations for project pricing, client follow-ups and faster daily production.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <span class="when">2015 – 2018</span>
+          <h3><span data-lang="ar">مصمم جرافيك وموشن جرافيك</span><span data-lang="en">Graphic &amp; Motion Graphic Designer</span></h3>
+          <div class="org"><span data-lang="ar">عمل حر</span><span data-lang="en">Freelance</span></div>
+          <ul data-lang="ar"><li>صممت إعلانات ومواد بصرية للسوشيال ميديا، ونفّذت فيديوهات شرح ومقدمات وتحريك شعارات وكينتك تايبوجرافي.</li></ul>
+          <ul data-lang="en"><li>Designed social media ads and visual assets; produced explainer videos, intros, logo animations and kinetic typography.</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <aside class="reveal">
+      <div class="box" id="infoBox">
+        <h3><span data-lang="ar">بيانات أساسية</span><span data-lang="en">Key Information</span></h3>
+        <dl class="kv" id="infoList"></dl>
+      </div>
+      <div class="box">
+        <h3><span data-lang="ar">التعليم</span><span data-lang="en">Education</span></h3>
+        <p><b><span data-lang="ar">بكالوريوس علوم الحاسب</span><span data-lang="en">Bachelor of Computer Science</span></b><br>
+        <span data-lang="ar">أكاديمية طيبة</span><span data-lang="en">Thebes Academy</span> · 2017 – 2021</p>
+      </div>
+      <div class="box">
+        <h3><span data-lang="ar">اللغات</span><span data-lang="en">Languages</span></h3>
+        <p data-lang="ar">العربية — اللغة الأم<br>الإنجليزية — C2 متقدم جداً (شهادة EF SET)</p>
+        <p data-lang="en">Arabic — Native<br>English — C2 Proficient (EF SET certified)</p>
+      </div>
+      <div class="box">
+        <h3><span data-lang="ar">مشاريع السوق السعودي</span><span data-lang="en">Saudi Market Projects</span></h3>
+        <ul data-lang="ar"><li>شركة الصندوق الأسود — هوية وسوشيال ميديا</li><li>معرض الزعيم — فيديو وتصميم</li><li>حملات موسمية (الشتاء والصيف)</li></ul>
+        <ul data-lang="en"><li>Black Box — branding &amp; social content</li><li>Al Zaeem Exhibition — video &amp; design</li><li>Seasonal campaigns (winter &amp; summer)</li></ul>
+      </div>
+      <div class="box">
+        <h3><span data-lang="ar">الشهادات والدورات</span><span data-lang="en">Certifications &amp; Training</span></h3>
+        <ul>
+          <li>EF SET English Certificate — C2 Proficient · 2023</li>
+          <li>Motion Graphics Advanced — School of Motion · 2020</li>
+          <li>Animation Bootcamp — School of Motion · 2019</li>
+          <li>After Effects Kickstart — School of Motion · 2018</li>
+          <li>Element 3D Essential Training (VFX) — Video Copilot · 2021</li>
+          <li>Adobe Premiere Pro CC: Masterclass — Udemy · 2019</li>
+          <li>Python for Everybody — University of Michigan (Coursera) · 2022</li>
+          <li>Python for Automation · Automate the Boring Stuff — Udemy · 2021–2022</li>
+          <li>Preferred Freelancer — Freelancer.com</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="why" style="padding-top:0">
+  <div class="wrap reveal">
+    <div class="sec-head"><h2><small>Why me</small><span data-lang="ar">لماذا أنا؟</span><span data-lang="en">Why Hire Me</span></h2></div>
+    <div class="why">
+      <div><b><span data-lang="ar">فريق إنتاج في شخص واحد</span><span data-lang="en">A production team in one</span></b><p data-lang="ar">مونتاج + موشن + مؤثرات بصرية + تصميم + محتوى سوشيال.</p><p data-lang="en">Editing, motion, VFX, design and social content in one hire.</p></div>
+      <div><b><span data-lang="ar">أعرف السوق السعودي</span><span data-lang="en">Knows the Saudi market</span></b><p data-lang="ar">نفّذت مشاريع وحملات موسمية لعلامات سعودية وأفهم ذوق الجمهور المحلي.</p><p data-lang="en">Delivered projects and seasonal campaigns for Saudi brands; understands the local audience.</p></div>
+      <div><b><span data-lang="ar">أسرع بالأتمتة</span><span data-lang="en">Faster through automation</span></b><p data-lang="ar">أستخدم Python والذكاء الاصطناعي لاختصار الوقت وزيادة الإنتاج بنفس الجودة.</p><p data-lang="en">Python and AI tools cut turnaround time and increase output at the same quality.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="contact">
+      <h2><span data-lang="ar">خلّينا نشتغل سوا</span><span data-lang="en">Let's work together</span></h2>
+      <p class="lead" style="margin:0 auto">
+        <span data-lang="ar">متاح للانضمام فوراً والانتقال إلى أي مدينة في المملكة.</span>
+        <span data-lang="en">Available to join immediately and relocate to any city in the Kingdom.</span>
+      </p>
+      <div class="cta" id="contactBtns"></div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Mohamed Sharaa</footer>
+
+<script>
+/* ============================================================
+   عدّل بياناتك هنا — أي خانة فاضية "" مش هتظهر في الموقع
+   ============================================================ */
+const PROFILE = {
+  email: "sharraa2018@gmail.com",
+  phone: "+966 54 094 1701",
+  phone2: "+20 127 426 7359",
+  whatsapp: "966540941701",
+  linkedin: "https://www.linkedin.com/in/mohamedsharaa",
+  behance: "",          // مثال: "https://www.behance.net/..."
+  freelancer: "https://www.freelancer.com/u/firooofficial",
+  showreel: "https://www.youtube.com/watch?v=EU56Ajj3ZVE",
+  youtube: "https://www.youtube.com/@FirooMotion",
+  info: {               // بيانات مهمة لأصحاب العمل في السعودية
+    nationality:  { ar: "مصري", en: "Egyptian" },
+    location:     { ar: "طنطا، مصر — جاهز للانتقال للسعودية", en: "Tanta, Egypt — open to relocate to KSA" },
+    visa:         { ar: "خارج المملكة — يحتاج تأشيرة عمل", en: "Outside KSA — requires work visa" },
+    availability: { ar: "فوري", en: "Immediate" },
+    license:      { ar: "رخصة قيادة سارية", en: "Valid driving license" },
+    birth:        { ar: "1 يناير 2000", en: "1 Jan 2000" },
+  },
+};
+
+/* أعمالك: حط الصور في فولدر assets/works/ واكتب اسمها في img
+   video: لينك يوتيوب أو فيميو أو ملف mp4 — لو موجود هيشتغل في نافذة  */
+const WORKS = [
+  { cat: "video",  title: { ar: "شوريل المونتاج والموشن جرافيك", en: "Editing & Motion Graphics Reel" }, sub: { ar: "أفضل أعمالي في فيديو واحد", en: "Best of my work in one reel" }, video: "https://www.youtube.com/watch?v=EU56Ajj3ZVE" },
+  { cat: "motion", title: { ar: "تطبيق Toters لتوصيل الطعام", en: "Toters Food Delivery App" }, sub: { ar: "فيديو موشن جرافيك ترويجي", en: "Motion graphics promo" }, video: "https://www.youtube.com/watch?v=OB67Ljxm7IA" },
+  { cat: "motion", title: { ar: "Original Coffee — إطلاق منتج", en: "Original Coffee — Product Reveal" }, sub: { ar: "After Effects", en: "After Effects" }, video: "https://www.youtube.com/watch?v=U1KnTlFpec8" },
+  { cat: "vfx",    title: { ar: "استبدال الشاشات — قبل وبعد", en: "Screen Replacement VFX Breakdown" }, sub: { ar: "مؤثرات بصرية VFX", en: "VFX — before & after" }, video: "https://www.youtube.com/watch?v=EGYBCoR0dKs" },
+  { cat: "vfx",    title: { ar: "مؤثرات النار", en: "Fire VFX" }, sub: { ar: "فيديو قصير — After Effects", en: "Short — After Effects" }, video: "https://www.youtube.com/shorts/oRh_cesHvBk", vertical: true },
+  { cat: "shorts", title: { ar: "ريلز قصير", en: "Short-form Reel" }, sub: { ar: "مونتاج سريع الإيقاع", en: "Fast-paced edit" }, video: "https://www.youtube.com/shorts/1y4HrSKlQXM", vertical: true },
+  { cat: "shorts", title: { ar: "ريلز قصير", en: "Short-form Reel" }, sub: { ar: "مونتاج سريع الإيقاع", en: "Fast-paced edit" }, video: "https://www.youtube.com/shorts/jWFUWTJqU7E", vertical: true },
+];
+
+const CATS = { all: { ar: "الكل", en: "All" }, video: { ar: "شوريل", en: "Reel" }, motion: { ar: "موشن", en: "Motion" },
+               vfx: { ar: "مؤثرات VFX", en: "VFX" }, shorts: { ar: "ريلز قصيرة", en: "Shorts" }, branding: { ar: "هوية وتصميم", en: "Branding" } };
+const GRADS = { video: "#ff6a3d,#7a1fa2", motion: "#e8b04b,#ff6a3d", vfx: "#111827,#4f46e5", shorts: "#e0562b,#c2841f", branding: "#4f46e5,#06b6d4" };
+const ytId = u => (u.match(/(?:youtu\.be\/|v=|shorts\/)([\w-]{11})/) || [])[1];
+
+let lang = "ar", cat = "all";
+try { lang = localStorage.getItem("lang") || (navigator.language.startsWith("ar") ? "ar" : "en"); } catch (e) {}
+const urlLang = new URLSearchParams(location.search).get("lang");  // ?lang=ar أو ?lang=en
+if (urlLang === "ar" || urlLang === "en") lang = urlLang;
+const T = o => o ? (o[lang] ?? o) : "";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function embed(url){
+  let m = url.match(/(?:youtu\.be\/|v=|shorts\/)([\w-]{11})/);
+  if (m) return `<iframe src="https://www.youtube.com/embed/${m[1]}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+  m = url.match(/vimeo\.com\/(\d+)/);
+  if (m) return `<iframe src="https://player.vimeo.com/video/${m[1]}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+  return `<video src="${esc(url)}" controls autoplay></video>`;
+}
+
+function renderWorks(){
+  const used = ["all", ...new Set(WORKS.map(w => w.cat))];
+  document.getElementById("filters").innerHTML = used.map(c =>
+    `<button data-c="${c}" aria-pressed="${c === cat}">${esc(T(CATS[c]))}</button>`).join("");
+  document.getElementById("works").innerHTML = WORKS.map((w, i) => (cat === "all" || w.cat === cat) ? `
+    <button class="work" data-i="${i}">
+      <div class="thumb" style="background:linear-gradient(135deg,${GRADS[w.cat]})">
+        ${w.img || ytId(w.video || "") ? `<img src="${esc(w.img || `https://i.ytimg.com/vi/${ytId(w.video)}/hqdefault.jpg`)}" alt="${esc(T(w.title))}" loading="lazy">` : `<div class="ph">${esc(T(CATS[w.cat]))}</div>`}
+        ${w.video ? `<div class="play">▶</div>` : ""}
+      </div>
+      <div class="meta"><b>${esc(T(w.title))}</b><span>${esc(T(w.sub))}</span></div>
+    </button>` : "").join("");
+}
+
+function renderProfile(){
+  const P = PROFILE, labels = {
+    nationality: { ar: "الجنسية", en: "Nationality" }, location: { ar: "الموقع", en: "Location" },
+    visa: { ar: "حالة الإقامة", en: "Visa status" }, availability: { ar: "الانضمام", en: "Availability" },
+    license: { ar: "رخصة القيادة", en: "Driving license" }, birth: { ar: "تاريخ الميلاد", en: "Date of birth" },
+    phone: { ar: "الجوال", en: "Phone" }, email: { ar: "البريد", en: "Email" } };
+  const rows = Object.entries(P.info).filter(([, v]) => T(v)).map(([k, v]) => [k, T(v)]);
+  const phones = [P.phone, P.phone2].filter(Boolean).map(p => `<span dir="ltr">${esc(p)}</span>`).join("<br>");
+  if (phones) rows.unshift(["phone", phones]);
+  rows.unshift(["email", esc(P.email)]);
+  document.getElementById("infoList").innerHTML = rows.map(([k, v]) =>
+    `<dt>${esc(T(labels[k]))}</dt><dd>${k === "phone" || k === "email" ? v : esc(v)}</dd>`).join("");
+
+  const btns = [];
+  if (P.whatsapp) btns.push(`<a class="btn primary" target="_blank" href="https://wa.me/${P.whatsapp}">${lang === "ar" ? "راسلني واتساب" : "WhatsApp me"}</a>`);
+  btns.push(`<a class="btn${P.whatsapp ? "" : " primary"}" href="mailto:${P.email}">${esc(P.email)}</a>`);
+  if (P.linkedin) btns.push(`<a class="btn" target="_blank" href="${esc(P.linkedin)}">LinkedIn</a>`);
+  if (P.behance) btns.push(`<a class="btn" target="_blank" href="${esc(P.behance)}">Behance</a>`);
+  if (P.showreel) btns.push(`<a class="btn" target="_blank" href="${esc(P.showreel)}">Showreel</a>`);
+  if (P.youtube) btns.push(`<a class="btn" target="_blank" href="${esc(P.youtube)}">YouTube</a>`);
+  if (P.freelancer) btns.push(`<a class="btn" target="_blank" href="${esc(P.freelancer)}">Freelancer.com</a>`);
+  document.getElementById("contactBtns").innerHTML = btns.join("");
+
+  const wa = document.querySelector(".js-wa");
+  if (P.whatsapp) { wa.href = `https://wa.me/${P.whatsapp}`; wa.hidden = false; }
+
+  const pc = [P.phone, P.phone2, P.email, location.host,
+              P.linkedin && P.linkedin.replace(/^https?:\/\/(www\.)?/, ""),
+              P.youtube && P.youtube.replace(/^https?:\/\/(www\.)?/, ""),
+              P.behance && P.behance.replace(/^https?:\/\/(www\.)?/, "")].filter(Boolean);
+  document.getElementById("printContact").innerHTML =
+    `<p style="margin:0;font-size:9.5pt;display:flex;flex-wrap:wrap;gap:1px 16px">${pc.map(x => `<span dir="ltr">${esc(x)}</span>`).join("")}</p>`;
+}
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+  document.getElementById("langBtn").textContent = l === "ar" ? "EN" : "عربي";
+  try { localStorage.setItem("lang", l); } catch (e) {}
+  renderWorks(); renderProfile();
+}
+
+document.getElementById("langBtn").onclick = () => setLang(lang === "ar" ? "en" : "ar");
+document.getElementById("filters").onclick = e => { const b = e.target.closest("button"); if (b) { cat = b.dataset.c; renderWorks(); } };
+const viewer = document.getElementById("viewer");
+document.getElementById("works").onclick = e => {
+  const b = e.target.closest(".work"); if (!b) return;
+  const w = WORKS[b.dataset.i];
+  if (!w.video && !w.img) return;
+  document.getElementById("vMedia").innerHTML = w.video ? embed(w.video) : `<img src="${esc(w.img)}" alt="">`;
+  viewer.classList.toggle("vertical", !!w.vertical);
+  document.getElementById("vTitle").textContent = T(w.title);
+  viewer.showModal();
+};
+viewer.addEventListener("close", () => document.getElementById("vMedia").innerHTML = "");
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+window.addEventListener("beforeprint", () => document.querySelectorAll(".reveal").forEach(el => el.classList.add("in")));
+
+setLang(lang);
+</script>
+</body>
+</html>
