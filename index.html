@@ -90,7 +90,7 @@ h1 .grad-text{background-size:200% 100%;animation:sheen 8s linear infinite}
 @keyframes spin{to{--a:360deg}}
 
 /* hero portrait: code-editor window */
-.photo{position:relative;justify-self:center;width:min(500px,100%);direction:ltr}
+.photo{position:relative;justify-self:center;width:min(460px,100%);direction:ltr}
 .photo .print-photo{display:none}
 .ide{position:relative;border-radius:18px;border:1px solid var(--line2);background:#0b0e16;overflow:hidden;
   box-shadow:0 40px 90px -30px #000,0 0 90px -30px color-mix(in srgb,var(--c2) 70%,transparent);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
@@ -105,11 +105,9 @@ h1 .grad-text{background-size:200% 100%;animation:sheen 8s linear infinite}
 .ide-tabs b{width:8px;height:8px;border-radius:2px;background:var(--c)}
 .ide-body{position:relative;padding-left:34px}
 .gutter{position:absolute;left:0;top:0;bottom:0;width:34px;padding:10px 8px 0 0;font-family:var(--mono);font-size:11px;line-height:2.1;color:#3b4357;text-align:right;border-right:1px solid var(--line);user-select:none;overflow:hidden}
-.preview{position:relative;aspect-ratio:1/1.02;overflow:hidden;
-  background:radial-gradient(circle at 50% 40%,#8b5cf650,transparent 58%),radial-gradient(circle at 85% 95%,#22d3ee38,transparent 50%),radial-gradient(circle at 10% 90%,#f472b628,transparent 45%),#0d1020}
-.preview::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:24px 24px}
-.preview .me{position:absolute;bottom:0;left:50%;width:84%;height:auto;transform:translateX(-50%);filter:drop-shadow(0 0 30px #8b5cf640)}
-.bbox{position:absolute;left:27%;top:9%;width:46%;height:60%;border:1px dashed color-mix(in srgb,var(--c1) 80%,transparent);border-radius:4px;animation:bbox 3s ease-in-out infinite}
+.preview{position:relative;aspect-ratio:4/5;overflow:hidden;background:#fff}
+.preview .me{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.bbox{position:absolute;left:21%;top:9%;width:58%;height:66%;border:1px dashed color-mix(in srgb,var(--c1) 80%,transparent);border-radius:4px;animation:bbox 3s ease-in-out infinite}
 .bbox i{position:absolute;width:7px;height:7px;background:#0b0e16;border:1.5px solid var(--c1)}
 .bbox i:nth-child(1){left:-4px;top:-4px}.bbox i:nth-child(2){right:-4px;top:-4px}.bbox i:nth-child(3){left:-4px;bottom:-4px}.bbox i:nth-child(4){right:-4px;bottom:-4px}
 .bbox span{position:absolute;left:-1px;top:-24px;font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:4px 4px 4px 0;background:var(--c1);color:#05060a;font-weight:700;white-space:nowrap}
@@ -126,7 +124,7 @@ h1 .grad-text{background-size:200% 100%;animation:sheen 8s linear infinite}
 @keyframes bob{50%{translate:0 -10px}}
 .chip svg.i{width:16px;height:16px}
 .chip.c1{top:24%;left:-34px;color:var(--c1)}
-.chip.c2{top:52%;right:-34px;color:var(--c3);animation-delay:-2s}
+.chip.c2{top:66%;right:-34px;color:var(--c3);animation-delay:-2s}
 .chip.rate{bottom:200px;left:-40px;flex-direction:column;align-items:flex-start;gap:0;font-family:inherit;color:var(--muted);animation-delay:-3s}
 .chip.rate b{font-size:24px;color:var(--ink);font-family:var(--mono)}
 @media (max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:28px}.photo{order:-1;width:min(440px,100%)}.hero{padding-top:30px}}
@@ -450,7 +448,7 @@ footer .heart{color:var(--c3)}
         <div class="ide-body">
           <div class="gutter" aria-hidden="true">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24</div>
           <div class="preview">
-            <img class="me" src="assets/photo-cutout.webp" alt="Mohamed Sharaa" width="900" height="1159" fetchpriority="high">
+            <img class="me" src="assets/photo.jpg" alt="Mohamed Sharaa" width="900" height="1159" fetchpriority="high">
             <div class="bbox" aria-hidden="true"><i></i><i></i><i></i><i></i><span>&lt;Developer /&gt;</span></div>
             <span class="meta-pill" aria-hidden="true">900 × 1159 · 100%</span>
           </div>
