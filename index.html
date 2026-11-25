@@ -7,9 +7,9 @@
 <meta name="description" content="Mohamed Sharaa — Mobile & Web Developer, Python automation, bots, web scraping, Shopify and 2D games — plus Senior Video Editor, Motion Designer and VFX artist. 211+ projects in 30+ countries.">
 <meta property="og:title" content="Mohamed Sharaa — Developer & Motion Designer">
 <meta property="og:description" content="Mobile & Web Development · Python Automation · Bots · Shopify · Video Editing · Motion Graphics · VFX. 8+ years · 211+ projects · 4.9/5.">
-<meta property="og:image" content="assets/avatar.jpg">
+<meta property="og:image" content="assets/photo.jpg">
 <meta name="theme-color" content="#06070b">
-<link rel="icon" href="assets/avatar.jpg">
+<link rel="icon" href="assets/photo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -89,47 +89,49 @@ h1 .grad-text{background-size:200% 100%;animation:sheen 8s linear infinite}
 @property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
 @keyframes spin{to{--a:360deg}}
 
-/* 3D hero portrait */
-.photo{position:relative;justify-self:center;width:min(560px,100%);aspect-ratio:1/1.08;perspective:1100px;perspective-origin:50% 88%;direction:ltr}
+/* hero portrait: code-editor window */
+.photo{position:relative;justify-self:center;width:min(500px,100%);direction:ltr}
 .photo .print-photo{display:none}
-.stage{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .5s cubic-bezier(.2,.8,.2,1);animation:sway 9s ease-in-out infinite}
-.stage.live{animation:none}
-@keyframes sway{0%,100%{transform:rotateY(-9deg) rotateX(3deg)}50%{transform:rotateY(9deg) rotateX(-2deg)}}
-.stage>*{position:absolute}
-.orb{left:9%;right:9%;top:16%;aspect-ratio:1;border-radius:50%;transform:translateZ(-90px);
-  background:radial-gradient(circle at 50% 35%,#8b5cf670,#22d3ee30 45%,#06070b00 72%),radial-gradient(circle,#0d1020 0 60%,transparent 61%);
-  box-shadow:0 0 120px -10px #8b5cf699,inset 0 0 80px #22d3ee22}
-.halo{left:5%;right:5%;top:12%;aspect-ratio:1;border-radius:50%;transform:translateZ(-60px);padding:2px;
-  background:conic-gradient(from var(--a),var(--c1),var(--c2),var(--c3),transparent 70%,var(--c1));animation:spin 7s linear infinite;
-  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;filter:drop-shadow(0 0 10px var(--c2))}
-.halo.h2{left:15%;right:15%;top:22%;padding:1px;opacity:.5;animation-duration:12s;animation-direction:reverse;transform:translateZ(-120px)}
-.floor{left:-20%;right:-20%;bottom:-4%;height:34%;transform:translateZ(-30px);perspective:300px;overflow:hidden;
-  -webkit-mask:radial-gradient(ellipse 50% 80% at 50% 70%,#000 10%,transparent 70%);mask:radial-gradient(ellipse 50% 80% at 50% 70%,#000 10%,transparent 70%)}
-.floor::before{content:"";position:absolute;left:-50%;right:-50%;top:0;height:200%;transform-origin:50% 0;transform:rotateX(62deg);
-  background-image:linear-gradient(#22d3ee50 1px,transparent 1px),linear-gradient(90deg,#8b5cf650 1px,transparent 1px);background-size:40px 40px;animation:floor 2.5s linear infinite}
-@keyframes floor{to{background-position:0 40px}}
-/* orbit rings: a back half behind the portrait and a front half in front of it (flat, parallel layers = no 3D plane splitting) */
-.orbit{left:-6%;right:-6%;top:38%;aspect-ratio:1;--k:.26;transform:translateZ(var(--oz)) scale(var(--s)) scaleY(var(--k))}
-.orbit.back{--oz:-110px;--s:1.1;clip-path:inset(-10% -10% 50% -10%)}
-.orbit.front{--oz:70px;--s:.936;clip-path:inset(50% -10% -10% -10%)}
-.orbit .rg{position:absolute;inset:0;border-radius:50%;border:3px solid #22d3eeaa;box-shadow:0 0 22px #22d3ee66,inset 0 0 22px #22d3ee44;transform:rotate(var(--a));animation:spin 12s linear infinite}
-.orbit .rg i{position:absolute;top:-8px;left:calc(50% - 7px);width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 10px 3px var(--c1),0 0 24px 8px var(--c1);
-  transform:rotate(calc(var(--a) * -1)) scaleY(calc(1 / var(--k)));animation:spin 12s linear infinite}
-.orbit.o2{left:8%;right:8%;top:48%;--k:.3}
-.orbit.o2 .rg{border-color:#f472b6aa;box-shadow:0 0 22px #f472b655,inset 0 0 22px #f472b633;animation-duration:18s;animation-direction:reverse}
-.orbit.o2 .rg i{box-shadow:0 0 10px 3px var(--c3),0 0 24px 8px var(--c3);animation-duration:18s;animation-direction:reverse}
-.me{left:50%;bottom:0;width:94%;height:auto;margin-left:-47%;transform:translateZ(20px);pointer-events:none}
-.chip{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12.5px;padding:9px 14px;border-radius:14px;border:1px solid var(--line2);background:#0d1019e8;box-shadow:0 14px 34px #000a,inset 0 1px 0 #ffffff12;white-space:nowrap;animation:bob 6s ease-in-out infinite;transform:translateZ(var(--z,90px))}
-@keyframes bob{50%{translate:0 -12px}}
+.ide{position:relative;border-radius:18px;border:1px solid var(--line2);background:#0b0e16;overflow:hidden;
+  box-shadow:0 40px 90px -30px #000,0 0 90px -30px color-mix(in srgb,var(--c2) 70%,transparent);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.photo:hover .ide{transform:translateY(-6px)}
+.ide::before{content:"";position:absolute;inset:0 0 auto;height:1px;background:var(--grad);z-index:3}
+.ide-top{display:flex;align-items:center;height:42px;background:#080a11;border-bottom:1px solid var(--line)}
+.ide-dots{display:flex;gap:7px;padding:0 14px;flex:none}
+.ide-dots i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.ide-dots i:nth-child(2){background:#febc2e}.ide-dots i:nth-child(3){background:#28c840}
+.ide-tabs{display:flex;height:100%;overflow:hidden;min-width:0}
+.ide-tabs span{display:flex;align-items:center;gap:7px;padding:0 14px;font-family:var(--mono);font-size:12px;color:var(--muted);border-left:1px solid var(--line);white-space:nowrap}
+.ide-tabs span.on{color:var(--ink);background:#0b0e16;box-shadow:inset 0 2px 0 var(--c1)}
+.ide-tabs b{width:8px;height:8px;border-radius:2px;background:var(--c)}
+.ide-body{position:relative;padding-left:34px}
+.gutter{position:absolute;left:0;top:0;bottom:0;width:34px;padding:10px 8px 0 0;font-family:var(--mono);font-size:11px;line-height:2.1;color:#3b4357;text-align:right;border-right:1px solid var(--line);user-select:none;overflow:hidden}
+.preview{position:relative;aspect-ratio:1/1.02;overflow:hidden;
+  background:radial-gradient(circle at 50% 40%,#8b5cf650,transparent 58%),radial-gradient(circle at 85% 95%,#22d3ee38,transparent 50%),radial-gradient(circle at 10% 90%,#f472b628,transparent 45%),#0d1020}
+.preview::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:24px 24px}
+.preview .me{position:absolute;bottom:0;left:50%;width:84%;height:auto;transform:translateX(-50%);filter:drop-shadow(0 0 30px #8b5cf640)}
+.bbox{position:absolute;left:27%;top:9%;width:46%;height:60%;border:1px dashed color-mix(in srgb,var(--c1) 80%,transparent);border-radius:4px;animation:bbox 3s ease-in-out infinite}
+.bbox i{position:absolute;width:7px;height:7px;background:#0b0e16;border:1.5px solid var(--c1)}
+.bbox i:nth-child(1){left:-4px;top:-4px}.bbox i:nth-child(2){right:-4px;top:-4px}.bbox i:nth-child(3){left:-4px;bottom:-4px}.bbox i:nth-child(4){right:-4px;bottom:-4px}
+.bbox span{position:absolute;left:-1px;top:-24px;font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:4px 4px 4px 0;background:var(--c1);color:#05060a;font-weight:700;white-space:nowrap}
+@keyframes bbox{50%{border-color:color-mix(in srgb,var(--c1) 35%,transparent)}}
+.preview .meta-pill{position:absolute;left:10px;bottom:10px;font-family:var(--mono);font-size:10.5px;color:#aeb6c8;padding:3px 9px;border-radius:6px;background:#06070bc0;border:1px solid var(--line2)}
+.ide-term{border-top:1px solid var(--line);background:#080a11;padding:10px 14px 12px;font-family:var(--mono);font-size:12px;line-height:1.85;height:118px;overflow:hidden;color:#cbd3e1}
+.ide-term .h{display:flex;gap:16px;font-size:10.5px;color:var(--muted);margin-bottom:4px;letter-spacing:.5px}
+.ide-term .h b{color:var(--ink);font-weight:500;box-shadow:inset 0 -1px 0 var(--c1)}
+.ide-term .ok{color:var(--ok)}.ide-term .pr{color:var(--c1)}.ide-term .ar{color:var(--c3)}
+.ide-term .cur{display:inline-block;width:7px;height:1.05em;background:var(--c1);vertical-align:-.18em;animation:blink 1s steps(1) infinite}
+.ide-status{display:flex;gap:14px;align-items:center;height:26px;padding:0 12px;font-family:var(--mono);font-size:10.5px;color:#e6fbff;background:linear-gradient(90deg,#0e7490,#6d28d9 60%,#be185d)}
+.ide-status .sp{margin-left:auto}
+.chip{position:absolute;z-index:4;display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12.5px;padding:9px 14px;border-radius:14px;border:1px solid var(--line2);background:#0d1019f0;box-shadow:0 14px 34px #000a,inset 0 1px 0 #ffffff12;white-space:nowrap;animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{translate:0 -10px}}
 .chip svg.i{width:16px;height:16px}
-.chip.c1{top:14%;left:-4%;color:var(--c1);--z:120px}
-.chip.c2{top:40%;right:-6%;color:var(--c3);animation-delay:-2s;--z:150px}
-.chip.c3{bottom:26%;left:-8%;color:#c4b5fd;animation-delay:-4s;--z:100px}
-.chip.rate{bottom:6%;right:2%;flex-direction:column;align-items:flex-start;gap:0;font-family:inherit;color:var(--muted);animation-delay:-3s;--z:170px}
+.chip.c1{top:24%;left:-34px;color:var(--c1)}
+.chip.c2{top:52%;right:-34px;color:var(--c3);animation-delay:-2s}
+.chip.rate{bottom:200px;left:-40px;flex-direction:column;align-items:flex-start;gap:0;font-family:inherit;color:var(--muted);animation-delay:-3s}
 .chip.rate b{font-size:24px;color:var(--ink);font-family:var(--mono)}
-@media (max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:20px}.photo{order:-1;width:min(380px,92vw)}.hero{padding-top:30px}
-  .chip{font-size:11px;padding:7px 10px}.chip.c1{left:9%;top:10%}.chip.c3{left:4%}.chip.c2{right:5%}.chip.rate b{font-size:19px}}
-@media (max-width:520px){.chip.c3{display:none}.chip{font-size:10.5px;padding:6px 9px;gap:6px}.chip svg.i{width:13px;height:13px}.chip.c2{top:13%;right:3%}.chip.c1{top:13%;left:8%}.floor{background-size:30px 30px}}
+@media (max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:28px}.photo{order:-1;width:min(440px,100%)}.hero{padding-top:30px}}
+@media (max-width:600px){.chip.c1,.chip.c2{display:none}.chip{padding:6px 10px}
+  .chip.rate{left:auto;right:10px;bottom:auto;top:56px}.chip.rate b{font-size:18px}.ide-tabs span:nth-child(3){display:none}.ide-term{font-size:11px;height:110px}.ide-status .hide-sm{display:none}}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:70px}
@@ -329,7 +331,7 @@ footer .heart{color:var(--c3)}
   .hero{padding:0 0 3.5mm;border-bottom:2px solid var(--c1);margin-bottom:4mm}
   .hero .wrap{grid-template-columns:auto 1fr;gap:6mm}
   .photo{order:-1;justify-self:start;align-self:center;width:27mm;aspect-ratio:auto;perspective:none}
-  .photo .stage{display:none!important}
+  .photo .ide{display:none!important}
   .photo .print-photo{display:block;width:27mm;height:34mm;object-fit:cover;object-position:center 30%;border:1px solid var(--line);border-radius:4mm}
   h1{font-size:23pt;margin:0 0 1mm;letter-spacing:0;line-height:1.15}
   h1 .grad-text{color:var(--ink);background:none;-webkit-text-fill-color:currentColor}
@@ -440,21 +442,25 @@ footer .heart{color:var(--c3)}
     </div>
     <div class="photo reveal" id="photo">
       <img class="print-photo" src="assets/photo.jpg" alt="Mohamed Sharaa">
-      <div class="stage" id="stage">
-      <div class="floor"></div>
-      <div class="halo h2"></div>
-      <div class="orb"></div>
-      <div class="halo"></div>
-      <div class="orbit back"><div class="rg"><i></i></div></div>
-      <div class="orbit o2 back"><div class="rg"><i></i></div></div>
-      <div class="orbit front"><div class="rg"><i></i></div></div>
-      <div class="orbit o2 front"><div class="rg"><i></i></div></div>
-      <img class="me" src="assets/avatar-cutout.webp" alt="Mohamed Sharaa" width="992" height="1215" fetchpriority="high">
+      <div class="ide" aria-hidden="false">
+        <div class="ide-top">
+          <div class="ide-dots"><i></i><i></i><i></i></div>
+          <div class="ide-tabs"><span class="on"><b style="--c:#f472b6"></b>mohamed.png</span><span><b style="--c:#facc15"></b>skills.py</span><span><b style="--c:#22d3ee"></b>reel.mp4</span></div>
+        </div>
+        <div class="ide-body">
+          <div class="gutter" aria-hidden="true">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24</div>
+          <div class="preview">
+            <img class="me" src="assets/photo-cutout.webp" alt="Mohamed Sharaa" width="900" height="1159" fetchpriority="high">
+            <div class="bbox" aria-hidden="true"><i></i><i></i><i></i><i></i><span>&lt;Developer /&gt;</span></div>
+            <span class="meta-pill" aria-hidden="true">900 × 1159 · 100%</span>
+          </div>
+        </div>
+        <div class="ide-term" aria-hidden="true"><div class="h"><b>TERMINAL</b><span>OUTPUT</span><span>PROBLEMS 0</span></div><div id="term"></div></div>
+        <div class="ide-status" aria-hidden="true"><span>⎇ main</span><span>✓ 0 errors</span><span class="sp hide-sm">Python · JS · After Effects</span><span>● online</span></div>
+      </div>
       <div class="chip c1"><svg class="i"><use href="#i-code"/></svg>web &amp; mobile</div>
       <div class="chip c2"><svg class="i"><use href="#i-film"/></svg>edit · motion</div>
-      <div class="chip c3"><svg class="i"><use href="#i-bot"/></svg>python · bots</div>
       <div class="chip rate"><b>4.9/5</b><span data-lang="ar">تقييم العملاء</span><span data-lang="en">Client rating</span></div>
-      </div>
     </div>
   </div>
   <div class="wrap">
@@ -982,20 +988,37 @@ addEventListener("scroll", () => {
   navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + cur));
 }, { passive: true });
 
-/* ---------- 3D portrait tilt ---------- */
+/* ---------- hero terminal ---------- */
 (function(){
-  const photo = document.getElementById("photo"), stage = document.getElementById("stage");
-  if (reduced || !matchMedia("(hover:hover)").matches) return;
-  addEventListener("pointermove", e => {
-    const r = photo.getBoundingClientRect();
-    if (r.bottom < 0 || r.top > innerHeight) return;
-    const dx = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / (r.width * .9)));
-    const dy = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / (r.height * .9)));
-    stage.classList.add("live");
-    stage.style.setProperty("--ry", (dx * 16).toFixed(2) + "deg");
-    stage.style.setProperty("--rx", (-dy * 10).toFixed(2) + "deg");
-  }, { passive: true });
-  document.addEventListener("pointerleave", () => { stage.classList.remove("live"); stage.style.removeProperty("--rx"); stage.style.removeProperty("--ry"); });
+  const el = document.getElementById("term");
+  const LINES = [
+    [["pr", "$ "], ["", "npm run hire-me"]],
+    [["ok", "✔ "], ["", "211+ projects shipped · 30+ countries"]],
+    [["ok", "✔ "], ["", "rating 4.9/5 · Preferred Freelancer"]],
+    [["ar", "➜ "], ["", "status: online — ready to start"]],
+  ];
+  const html = (upto) => {
+    let out = "", left = upto;
+    for (const line of LINES) {
+      const len = line.reduce((m, [, t]) => m + t.length, 0);
+      const take = Math.min(left, len);
+      let row = "", k = take;
+      for (const [c, t] of line) { const part = t.slice(0, Math.max(0, k)); k -= t.length; if (part) row += c ? `<span class="${c}">${esc(part)}</span>` : esc(part); }
+      left -= take;
+      if (take < len) return out + `<div>${row}<span class="cur"></span></div>`;
+      out += `<div>${row}</div>`;
+    }
+    return out;
+  };
+  const total = LINES.reduce((n, l) => n + l.reduce((m, [, t]) => m + t.length, 0), 0);
+  if (reduced) { el.innerHTML = html(total) + '<span class="cur"></span>'; return; }
+  let i = 0;
+  (function tick(){
+    i++;
+    el.innerHTML = i >= total ? html(total) + '<div><span class="pr">$ </span><span class="cur"></span></div>' : html(i);
+    if (i >= total) { setTimeout(() => { i = 0; tick(); }, 5000); return; }
+    setTimeout(tick, i < 17 ? 70 : 22);
+  })();
 })();
 
 /* ---------- particle network background ---------- */
